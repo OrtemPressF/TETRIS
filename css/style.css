@@ -1,0 +1,62 @@
+ul[class],
+ol[class] {
+  list-style: none;
+}
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    min-height: 100vh;
+  margin: 0;
+   padding: 0;
+   background-image: url("../media/background_tetris.jpg");
+  } 
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#canvas1 { 
+    border: 4px solid black;
+   background-color: rgb(33, 33, 33); 
+   margin-top: 3%;
+  }
+
+#stop{
+  height:30px;
+  width: 50px;
+  border: 2px solid black;
+  background-color: rgb(230, 129, 79); 
+  }
+  .menu{
+    background-image: url("../media/background_tetris.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover;
+    width: 100%;
+  }
+  #gayOver{
+    /* background-image: url("../media/background_tetris.jpg"); */
+    position: absolute;
+    visibility: hidden;
+    text-align: center;
+    color: black;
+    font-size: 33px;
+    height: 45px;
+    margin: 10% 20% 5% 36.9%;
+     }
+     #restart:hover{
+       background-color: #4db4bf;
+     }
+     #music:hover{
+      background-color: #4db4bf;
+    }     #effects:hover{
+      background-color: #4db4bf;
+    }
